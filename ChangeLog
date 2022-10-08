@@ -1,0 +1,141 @@
+2018-01-30 (0.8.3) Robin Gareus <robin@gareus.org>
+* NO-OP, build-system update only
+
+2017-01-11 (0.8.2) Robin Gareus <robin@gareus.org>
+* explicitly set "C" locale: consistent numeric data format
+* allow empty docroot for passing drive-letters on windows
+
+2015-11-25 (0.8.1) Robin Gareus <robin@gareus.org>
+* explicit LARGEFILE64 support
+* spelling corrections
+* ffmpeg-2.9 compatibility
+* update static builds to ffmpeg-2.8
+
+2015-03-03 (0.8.0) Robin Gareus <robin@gareus.org>
+* portability fixes
+* update ut-hash
+* speed up direct info-lookups & fix possible deadlock
+* bump various build-stack versions for binary releases
+
+2015-01-03 (0.7.6) Robin Gareus <robin@gareus.org>
+* update build system, packaging and default flags
+* optimized windows build (no terminal)
+* support OSX 10.10
+* remove 'beta' from header image/icon
+(no changes to application itself)
+
+2014-09-05 (0.7.5) Robin Gareus <robin@gareus.org>
+* fix FPS calculation
+* hotfix release
+
+2014-08-28 (0.7.4) Robin Gareus <robin@gareus.org>
+* case insensitive file extension for file-index
+* define OSX minimum version to 10.5
+* various fixes for windows build (paths, snprintf, tmpfile)
+* tweak built-in HTML front-page (title, IE compat)
+* update ffmpeg compatibility layer
+* ffmpeg decoder: update seek-mechanism & framerate parsing
+* update win+osx build stack
+
+2013-06-10 (0.7.3) Robin Gareus <robin@gareus.org>
+* update ffmpeg compatibility wrapper
+* fix CSV file info (no newline)
+* fix fileindex' file-ext filter
+
+2013-04-16 (0.7.2) Robin Gareus <robin@gareus.org>
+* fix aspect ratio calculation
+* update website & upload script
+
+2013-04-07 (0.7.1) Robin Gareus <robin@gareus.org>
+* basically a NOOP -- no new features, no changes in behaviour.
+* just shuffle around code to break out libharvid
+* update packaging info (post debian)
+* clean up auto-build/release/upload scripts
+* oh and, PTHREAD_SIGMASK is now disabled on OSX - allow sigterm, there :)
+
+2013-03-26 (v0.7.0) Robin Gareus <robin@gareus.org>
+* option to set maxiumum decoder thread count
+* fix make install-man
+* various build-script updates for static builds
+* send 503/retry instead of 500/err if video-cache fails fixes concurrency
+issue.
+
+2013-03-19 (v0.6.2) Robin Gareus <robin@gareus.org>
+* distinguish decoder-failure (500) and no-decoder thread avail (503/try again)
+* fix libjpeg detection (bashish echo)
+* fix various typos (makefile, manpage)
+
+2013-03-09 (v0.6.1) Robin Gareus <robin@gareus.org>
+* fix static build
+* 32/64bit print size_t fix
+
+2013-03-09 (v0.6.0) Robin Gareus <robin@gareus.org>
+* image-cache for encoded images (jpg, png)
+* add html/JS seek interface
+* fix SMPTE duration print - subframes == 0
+* fix compiler warnings
+
+2013-03-02 (v0.5.2) Robin Gareus <robin@gareus.org>
+* update README and built-in documentation on homepage
+* exclude packaging related files from source tar balls
+* add mtime to file-index
+* fileindex: add trailing slash to directory URLs
+* fileindex: fix file-extention filter
+
+2013-02-25 (v0.5.1) Robin Gareus <robin@gareus.org>
+* valid HTML
+* new OSX icon
+
+2013-02-25 (v0.5.0) Robin Gareus <robin@gareus.org>
+* support for OSX bundle
+* renice status page html
+* cope with invalid input data (negative frames, invalid width/height,..)
+* server process exit status
+* update release/build scripts
+
+2013-02-24 (v0.4.6) Robin Gareus <robin@gareus.org>
+* usage frequecy statistics (debug mode only)
+* optional server exit-on-idle timeout (prepare launchd, systemd)
+* export file-index as CSV and JSON
+
+2013-02-23 (v0.4.5) Robin Gareus <robin@gareus.org>
+* allow to set JPEG quality
+* fix chroot + chuid/gid lookup and execution order
+* incremental file-index output
+* dynamically sized output buffering for info pages
+
+2013-02-23 (v0.4.X) Robin Gareus <robin@gareus.org>
+* prepare website - binary releases
+* release and build scripts
+* man page formatting
+
+2013-02-20 (v0.4.0) Robin Gareus <robin@gareus.org>
+* replace linear lists with hash-table - fast lookup
+* implement "empty frame" rendering
+* add support for memlock
+
+2013-02-16 (v0.3.0) Robin Gareus <robin@gareus.org>
+* valid HTML
+* update --help and manual page
+* add support for CSV info format
+* sanity check options on startup
+* add support to choose pixel format dynamically
+* new banner/logo image
+* remove cruft from decoder and frame-cache code
+
+2013-02-14 (v0.2.0) Robin Gareus <robin@gareus.org>
+* server ID and built-in version,rc query handlers
+* portability and x-compile setup
+* proper shutdown on signal
+* ffmpeg concurrency improvements
+* separate file<>ID mapping
+* rework decoder control, reduce footprint of locked section
+* reference count decoder locks, non-blocking info calls
+* clean up logging and log-levels
+* flexible cache flusing and purging strategies
+
+2013-02-11 (v0.1.0) Robin Gareus <robin@gareus.org>
+* more refactoring, add CSV index
+
+2013-01-30 (v0.0.1) Robin Gareus <robin@gareus.org>
+* refactored sodankyla/icsd

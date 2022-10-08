@@ -1,0 +1,162 @@
+harvid (0.8.3-2) unstable; urgency=medium
+
+  * Team upload.
+
+  * Drop build-test for libjpeg (Closes: #963393)
+  * Update vim-common build dependency to xxd.
+    Thanks to Helmut Grohne <helmut@subdivi.de> (Closes: #912831)
+  * Bump dh-compat to 13
+  * Use https:// for Homepage-stanza
+  * Bump standards-version to 4.5.0
+  * Declare that building this package does not require 'root' powers
+  * Patch to fix spelling errors
+
+ -- IOhannes m zmölnig (Debian/GNU) <umlaeute@debian.org>  Tue, 30 Jun 2020 12:08:34 +0200
+
+harvid (0.8.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+  * d/control: Set Vcs-* to salsa.debian.org
+
+  [ Felipe Sateler ]
+  * Change maintainer address to debian-multimedia@lists.debian.org
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat
+
+  [ Sebastian Ramacher ]
+  * New upstream release.
+  * debian/control:
+    - Bump Standards-Version
+    - Bump debhelper compat to 12
+  * debian/rules: Use dpkg's pkg-info.mk
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 15 Sep 2019 20:32:29 +0200
+
+harvid (0.8.2-1) unstable; urgency=medium
+
+  * New upstream version 0.8.2
+  * Set dh/compat 10.
+  * Update copyright file.
+  * Sign tags.
+  * Fix VCS fields.
+  * Bump Standards.
+  * Fix hardening.
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Sun, 15 Jan 2017 20:04:52 +0100
+
+harvid (0.8.1-3) unstable; urgency=medium
+
+  * Team upload.
+  * Remove myself from the Uploaders field.
+
+ -- Alessio Treglia <alessio@debian.org>  Mon, 31 Oct 2016 13:43:14 +0000
+
+harvid (0.8.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control: Change libpng12-dev to libpng-dev. (Closes: #810175)
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Fri, 08 Jan 2016 00:46:36 +0100
+
+harvid (0.8.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.8.1
+  * Patches apllied upstream.
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Tue, 01 Dec 2015 14:10:20 +0100
+
+harvid (0.8.0-4) unstable; urgency=medium
+
+  * Patches forwarded.
+  * Add patch to fix parallel building (Closes: #804222).
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Sat, 07 Nov 2015 15:15:58 +0100
+
+harvid (0.8.0-3) unstable; urgency=medium
+
+  * Add ffmpeg_2.9.patch (Closes: #803824)
+  * Remove libav patch.
+  * Build parallel.
+  * Add gitigonere file.
+  * Add local-options file.
+  * Fix more spelling errors.
+  * Update copyright file.
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Tue, 03 Nov 2015 08:21:08 +0100
+
+harvid (0.8.0-2) unstable; urgency=medium
+
+  * Add vim-common as build-dep. (Closes: #775416)
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Tue, 24 Mar 2015 13:48:41 +0100
+
+harvid (0.8.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Added spelling patch.
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Mon, 23 Mar 2015 20:55:57 +0100
+
+harvid (0.7.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards.
+  * Add myself as uploader.
+  * Update copyright file.
+  * Patch refreshed.
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Sun, 26 Oct 2014 19:17:43 +0100
+
+harvid (0.7.3-4.1) unstable; urgency=medium
+
+  * Non-maintainer upload
+  * Change B-D to libjpeg-dev to finish the transition to libjpeg-turbo
+    (Closes: #763474)
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 29 Sep 2014 15:11:40 +0200
+
+harvid (0.7.3-4) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+  * debian/control: Bump Standards-Version.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 11 May 2014 21:33:56 +0200
+
+harvid (0.7.3-3) experimental; urgency=low
+
+  * Team upload.
+  * Add patch by Anton Khirnov and compile against Libav10 (Closes: #739304)
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 05 Apr 2014 19:23:05 -0400
+
+harvid (0.7.3-2) unstable; urgency=low
+
+  * Team upload.
+  * debian/rules: Remove --parallel. The build system doesn't support parallel
+    builds and fails to build on the buildds.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 26 Aug 2013 17:46:07 +0200
+
+harvid (0.7.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Change section to video. (Closes: #705629)
+
+ -- Alessio Treglia <alessio@debian.org>  Fri, 28 Jun 2013 00:51:09 +0100
+
+harvid (0.7.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Alessio Treglia <alessio@debian.org>  Mon, 03 Jun 2013 01:28:13 +0100
+
+harvid (0.7.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #704023)
+
+ -- Robin Gareus <robin@gareus.org>  Tue, 26 Mar 2013 22:14:46 +0100

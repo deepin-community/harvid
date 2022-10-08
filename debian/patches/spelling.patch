@@ -1,0 +1,17 @@
+Description: Fix spelling errors
+Author: IOhannes m zmölnig
+Forwarded: no
+Last-Update: 2020-06-30
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- harvid.orig/libharvid/ffdecoder.c
++++ harvid/libharvid/ffdecoder.c
+@@ -711,7 +711,7 @@
+   }
+ 
+   if (ff->pFrameFMT && !want_quiet) {
+-    fprintf( stderr, "frame seek unsucessful (frame: %lu).\n", frame);
++    fprintf( stderr, "frame seek unsuccessful (frame: %lu).\n", frame);
+   }
+ 
+   render_empty_frame(ff, buf, w, h, xoff, ys);

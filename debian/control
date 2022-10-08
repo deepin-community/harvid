@@ -1,0 +1,37 @@
+Source: harvid
+Section: video
+Priority: optional
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Uploaders:
+ Robin Gareus <robin@gareus.org>,
+ Jaromír Mikeš <mira.mikes@seznam.cz>,
+Build-Depends:
+ debhelper-compat (= 13),
+ libavcodec-dev (>= 6:10~),
+ libavformat-dev (>= 6:10~),
+ libjpeg-dev,
+ libpng-dev,
+ libswscale-dev (>= 6:10~),
+ pkg-config,
+ xxd,
+Homepage: https://x42.github.com/harvid/
+Rules-Requires-Root: no
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/multimedia-team/harvid.git
+Vcs-Browser: https://salsa.debian.org/multimedia-team/harvid
+
+Package: harvid
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: HTTP Ardour Video Server
+ Harvid is a HTTP server to efficiently extract, cache and
+ serve still images from movie files.
+ .
+ It provides for frame-accurate decoding and is main use-case
+ is to act as backend and second level cache for rendering the
+ videotimeline in Ardour.
+ .
+ Harvid uses ffmpeg/libav and supports a wide variety of video
+ codecs and formats.
